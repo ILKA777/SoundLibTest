@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YmI-hW-cy3">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundLibTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your lib" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exO-47-JZ1">
+                                <rect key="frame" x="83.666666666666686" y="118" width="226" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="exO-47-JZ1" secondAttribute="height" multiplier="226:41" id="MTM-Rn-OQW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KDW-Tb-whL">
+                                <rect key="frame" x="149" y="258" width="95" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="KDW-Tb-whL" secondAttribute="height" multiplier="19:11" id="dvx-N4-qvj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tuna">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                    <color key="baseForegroundColor" systemColor="systemOrangeColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapTunaButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="JLc-Zg-XwB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8G-TL-sPT">
+                                <rect key="frame" x="103.66666666666669" y="351" width="186" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="E8G-TL-sPT" secondAttribute="height" multiplier="186:55" id="X22-4k-YWM"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="systemMintColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="TuningFork">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapTuningForkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vnv-Go-ZBW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Smk-Qk-4uV">
+                                <rect key="frame" x="117" y="468" width="159" height="55"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="ZenTuner">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapZenTunerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Quc-JS-vFF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n39-AG-QFi">
+                                <rect key="frame" x="113" y="584" width="177" height="55"/>
+                                <color key="tintColor" systemColor="systemIndigoColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="SciTunner">
+                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapSciTunerButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSd-zD-ej0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Smk-Qk-4uV" firstAttribute="top" secondItem="E8G-TL-sPT" secondAttribute="bottom" constant="62" id="5h7-yc-aTA"/>
+                            <constraint firstItem="E8G-TL-sPT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="C3p-63-3vE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="exO-47-JZ1" secondAttribute="bottom" constant="659" id="E8r-nj-AF6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KDW-Tb-whL" secondAttribute="bottom" constant="505" id="JLB-X0-RLt"/>
+                            <constraint firstItem="Smk-Qk-4uV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="KEa-SE-4mo"/>
+                            <constraint firstItem="exO-47-JZ1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="L8P-Hf-eVn"/>
+                            <constraint firstItem="n39-AG-QFi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="113" id="cOv-lo-kUv"/>
+                            <constraint firstItem="Smk-Qk-4uV" firstAttribute="centerX" secondItem="E8G-TL-sPT" secondAttribute="centerX" id="kGZ-No-S6U"/>
+                            <constraint firstItem="n39-AG-QFi" firstAttribute="top" secondItem="Smk-Qk-4uV" secondAttribute="bottom" constant="61" id="oVr-PY-as3"/>
+                            <constraint firstItem="n39-AG-QFi" firstAttribute="centerX" secondItem="E8G-TL-sPT" secondAttribute="centerX" id="s7B-Fg-fm9"/>
+                            <constraint firstItem="KDW-Tb-whL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="v0P-GW-eQx"/>
+                            <constraint firstItem="E8G-TL-sPT" firstAttribute="top" secondItem="KDW-Tb-whL" secondAttribute="bottom" constant="38" id="xtv-X9-vgy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Gv3-i2-vZf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="947.32824427480909" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="30T-rT-jG0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YmI-hW-cy3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kaS-1J-ySz">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fHM-nW-dsc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YHF-06-hdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20.610687022900763" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.78039215689999997" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
